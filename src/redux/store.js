@@ -3,11 +3,13 @@ import thunk from 'redux-thunk'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import { userReducer } from './reducers/userReducer'
 import {categoriesReducer} from './reducers/categoriesReducers'
+import {productsReducer} from './reducers/productsReducers'
 
 //combine all reducers to one, change names of reducer if want
 const allReducers = combineReducers({
     user: userReducer,
-    categories: categoriesReducer
+    categories: categoriesReducer,
+    products: productsReducer
 })
 
 //add all middleware to list
